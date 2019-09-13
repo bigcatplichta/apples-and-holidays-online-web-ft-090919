@@ -64,12 +64,12 @@ def all_supplies_in_holidays(holiday_hash)
         holiday = holiday.to_s.split("_")
         holiday = holiday.collect {|w| w.capitalize}
         holiday = holiday.join(" ") + ": "
-        binding.pry
+        # binding.pry
       else 
         holiday = holiday.capitalize.to_s + ": "
       end 
       supplies = supplies.join(", ")
-      binding.pry
+      # binding.pry
       puts season
       puts holiday + season
     end
