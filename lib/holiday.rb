@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s.split("_")
       season = season.to_s.capitalize+":"
       
-      supllies = supplies.join(", ")
+      supplies = supplies.join(", ")
       binding.pry
     end
   end 
