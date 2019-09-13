@@ -61,7 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, supplies|
       holiday = holiday.to_s.split("_")
       season = season.to_s.capitalize+":"
-      
       supplies = supplies.join(", ")
       binding.pry
     end
