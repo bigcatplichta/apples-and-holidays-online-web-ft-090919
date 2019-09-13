@@ -59,10 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday| 
     holiday.each do |holiday, supplies|
-      binding.pry
       if holiday.to_s.include?("_")
-        holiday.to_s.split("_")
-        holiday.collect {|w| w.capitalize}
+        holiday = holiday.to_s.split("_")
+        holiday = holiday.collect {|w| w.capitalize}
         holiday = holiday.join(" ") + ": "
         binding.pry
       else 
